@@ -10,7 +10,7 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <50>;
+    quick-tap-ms = <100>;
 };
 
 / {
@@ -45,7 +45,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W       &kp E         &kp R          &kp T                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S       &kp D         &lt 4 F        &kp G                   &none                 &kp LS(LG(NUMBER_4))  &kp H        &kp J  &lt 3 K    &kp L    &kp SEMICOLON
+&kp A             &kp S       &kp D         &lt 4 F        &kp G                   &none                 &kp LS(LG(NUMBER_4))  &kp H        &kp J  &lt 5 K    &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X       &kp C         &kp V          &kp B                   &kp LEFT_CONTROL      &kp ESC               &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp C_MUTE  &kp LEFT_GUI  &kp LC(SPACE)  &mt LEFT_COMMAND SPACE  &lt 2 DELETE          &mt RSHFT BACKSPACE   &lt 1 ENTER                             &kp F4
             >;
@@ -73,10 +73,10 @@
 
         ARROW {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &kp F12  &trans  &trans  &trans  &trans
-&kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans      &trans  &trans   &trans  &trans  &trans  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans  &trans   &trans  &trans  &trans  &trans
-&bt BT_CLR    &trans        &trans        &trans        &trans        &trans      &trans  &trans                           &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -93,10 +93,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &kp F12  &trans  &trans  &trans  &trans
+&kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans      &trans  &trans   &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans  &trans   &trans  &trans  &trans  &trans
+&bt BT_CLR    &trans        &trans        &trans        &trans        &trans      &trans  &trans                           &trans
             >;
         };
 
